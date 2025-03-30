@@ -117,4 +117,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 Reyhan Capri Moraga - [@reannn22](https://github.com/Reannn22)
+
 Project Link: [https://github.com/Reannn22/Bank-Mandiri-Internship-Task-Final-Task-UI-and-Design-Pattern](https://github.com/yourusername/news-room-app)

@@ -2,7 +2,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/Reannn22/Bank-Mandiri-Internship-Task-Final-Task-UI-and-Design-Pattern)
 ![GitHub stars](https://img.shields.io/github/stars/Reannn22/Bank-Mandiri-Internship-Task-Final-Task-UI-and-Design-Pattern?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/Reannn22/Bank-Mandiri-Internship-Task-Final-Task-UI-and-Design-Pattern?style=social)
-![GitHub license](https://github.com/Reannn22/Bank-Mandiri-Internship-Task-Final-Task-UI-and-Design-Pattern/blob/master/LICENSE?style=social)
+![GitHub license](https://img.shields.io/github/watchers//Bank-Mandiri-Internship-Task-Final-Task-UI-and-Design-Pattern/blob/master/LICENSE?style=social)
 
 ## 📌 Overview
 **News Room** is a modern and lightweight news application developed for Android using Flutter. This project was created as part of the **Mandiri Virtual Internship Program**, implementing **Clean Architecture** principles and the **MVVM pattern** to ensure scalability and maintainability.

@@ -1,129 +1,120 @@
-# Virtual Internship Mandiri
+# News Room Application
 
-Panduan untuk menjalankan proyek ini.
+## Overview
+News Room is a mobile application developed using Flutter that provides users with the latest news from various sources. This project was developed as part of the Mandiri Virtual Internship Program, implementing clean architecture principles and modern design patterns.
 
-## Persyaratan
-- Flutter SDK versi terbaru
+## Features
+- Latest news feed with infinite scrolling
+- News categorization (Business, Technology, Sports, etc.)
+- Article bookmarking functionality
+- Detailed article view
+- Search news articles
+- Clean and intuitive user interface
+
+## Architecture
+The application follows Clean Architecture principles with MVVM (Model-View-ViewModel) pattern:
+```
+lib/
+├── data/
+│   ├── models/
+│   ├── repositories/
+│   └── sources/
+├── domain/
+│   ├── entities/
+│   ├── repositories/
+│   └── usecases/
+├── presentation/
+│   ├── pages/
+│   ├── widgets/
+│   └── viewmodels/
+└── core/
+    ├── utils/
+    ├── constants/
+    └── themes/
+```
+
+## Tech Stack
+- Flutter
+- Dart
+- Provider (State Management)
+- Dio (Network Calls)
+- SQLite (Local Storage)
+- GetIt (Dependency Injection)
+
+## Getting Started
+
+### Prerequisites
+- Flutter SDK
 - Android Studio / VS Code
-- Dart SDK
-- Android Emulator / Perangkat Android fisik
+- Git
 
-## Instalasi Flutter
-1. Download Flutter SDK:
-   - Kunjungi https://docs.flutter.dev/get-started/install/windows
-   - Download Flutter SDK untuk Windows
-   - Extract file zip ke C:\flutter
-   - Hindari lokasi yang memerlukan privilege tinggi (seperti C:\Program Files)
-
-2. Install Android Studio:
-   - Download dari https://developer.android.com/studio
-   - Install Android Studio
-   - Jalankan Android Studio dan selesaikan setup wizard
-   - Install plugin Flutter dan Dart:
-     - Buka Android Studio
-     - Buka Settings/Preferences
-     - Pilih Plugins
-     - Cari dan install plugin Flutter
-     - Restart Android Studio
-
-3. Setup Android Emulator:
-   - Di Android Studio, buka Tools > Device Manager
-   - Klik Create Device
-   - Pilih dan download sistem Android yang diinginkan
-   - Buat dan jalankan emulator
-
-## Setup Flutter PATH
-Sebelum menjalankan proyek, pastikan Flutter sudah terdaftar di PATH sistem:
-
-1. Temukan lokasi Flutter SDK:
-   - Buka Command Prompt
-   - Jalankan perintah berikut untuk menemukan lokasi Flutter:
-   ```bash
-   where flutter
-   ```
-   - Atau pada PowerShell:
-   ```bash
-   Get-Command flutter
-   ```
-   - Path yang muncul akan menunjukkan lokasi flutter.bat (contoh: C:\flutter\bin\flutter.bat)
-   - Lokasi Flutter SDK adalah folder parent dari 'bin' 
-
-2. Tambahkan Flutter ke System PATH:
-   - Buka "Edit System Environment Variables" (ketik "environment" di Start menu)
-   - Klik "Environment Variables"
-   - Pada "System Variables", cari variable "Path"
-   - Klik "Edit" dan tambahkan path ke folder bin Flutter SDK 
-     (C:\flutter\bin)
-   - Klik "OK" untuk menyimpan
-
-3. Penting: Tutup dan buka kembali Command Prompt/PowerShell setelah mengubah PATH
-   - PATH baru tidak akan terbaca pada jendela terminal yang sudah terbuka
-   - Buka terminal baru untuk menggunakan perubahan PATH
-
-4. Verifikasi instalasi dengan:
+### Installation
+1. Clone the repository
 ```bash
-flutter --version
+git clone https://github.com/yourusername/news-room-app.git
 ```
 
-## Troubleshooting PATH
-Jika perintah 'flutter' tidak dikenali:
-
-1. Verifikasi lokasi Flutter:
-   - Buka File Explorer
-   - Pastikan Flutter terinstall di C:\flutter
-   - Pastikan ada folder 'bin' di dalamnya
-   - Copy full path ke folder bin tersebut
-
-2. Periksa PATH di Command Prompt:
+2. Navigate to project directory
 ```bash
-echo %PATH%
+cd news-room-app
 ```
-   - Pastikan path ke C:\flutter\bin muncul dalam output
 
-3. Alternatif sementara:
-   - Gunakan full path ke flutter.bat:
-   ```bash
-   C:\flutter\bin\flutter --version
-   ```
-   - Atau pindah ke direktori bin Flutter:
-   ```bash
-   cd C:\flutter\bin
-   .\flutter --version
-   ```
-
-## Troubleshooting PowerShell
-Jika Flutter berfungsi di Git Bash tetapi tidak di PowerShell:
-
-1. Periksa Path di PowerShell:
-```powershell
-$env:Path -split ';'
+3. Install dependencies
+```bash
+flutter pub get
 ```
-   - Pastikan C:\flutter\bin muncul dalam daftar
 
-2. Solusi Cepat:
-   - Buka PowerShell sebagai Administrator
-   - Jalankan perintah berikut untuk menambahkan Flutter ke Path untuk sesi ini:
-   ```powershell
-   $env:Path += ";C:\flutter\bin"
-   ```
+4. Run the app
+```bash
+flutter run
+```
 
-3. Solusi Permanen:
-   - Buka PowerShell sebagai Administrator
-   - Jalankan perintah berikut:
-   ```powershell
-   [Environment]::SetEnvironmentVariable(
-       "Path",
-       [Environment]::GetEnvironmentVariable("Path", "Machine") + ";C:\flutter\bin",
-       "Machine"
-   )
-   ```
-   - Tutup dan buka kembali PowerShell
+## Design Patterns Used
+- Repository Pattern
+- Factory Pattern
+- Singleton Pattern
+- Observer Pattern
+- Dependency Injection
 
-4. Verifikasi:
-   ```powershell
-   flutter --version
-   ```
+## Features Screenshots
+| Home Screen | Article Detail |
+|-------------|----------------|
+| [Home Image] | [Detail Image]
 
-Catatan: Jika masih mengalami masalah, gunakan Git Bash sebagai alternatif untuk menjalankan perintah Flutter.
+## Code Standards
+- Followed Dart's official style guide
+- Implemented proper error handling
+- Used meaningful variable and function names
+- Added comments for complex logic
+- Proper file and folder structure
 
-`
+## Testing
+The application includes:
+- Unit Tests
+- Widget Tests
+- Integration Tests
+
+## Performance Optimization
+- Lazy loading of images
+- Caching mechanisms
+- Efficient state management
+- Optimized build methods
+
+## Contributing
+1. Fork the Project
+2. Create your Feature Branch
+3. Commit your Changes
+4. Push to the Branch
+5. Open a Pull Request
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+## Acknowledgments
+- News API for providing the news data
+- Bank Mandiri for the internship opportunity
+- Flutter community for resources and support
+
+## Contact
+Reyhan Capri Moraga - [@reannn22](https://github.com/Reannn22)
+Project Link: [https://github.com/Reannn22/Bank-Mandiri-Internship-Task-Final-Task-UI-and-Design-Pattern](https://github.com/yourusername/news-room-app)

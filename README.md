@@ -70,8 +70,8 @@ flutter run
 ## 🖥️ Screenshots
 | Home Screen | Article Detail |
 |-------------|---------------|
-|[Screenshot_2025-03-30-23-23-03-26_4f5da45ba9f8f23938554d03350e5c8d~3](https://github.com/user-attachments/assets/1160ef90-e538-4659-beb4-855e973ac370)
-lder.com/300) |![Screenshot_2025-03-30-23-23-12-59_4f5da45ba9f8f23938554d03350e5c8d~2](https://github.com/user-attachments/assets/672f6eb8-abe2-407b-9713-156343ce8978)
+| ![Uploading Screenshot_2025-03-30-23-23-03-26_4f5da45ba9f8f23938554d03350e5c8d~3.jpg…]()
+ |![Screenshot_2025-03-30-23-23-12-59_4f5da45ba9f8f23938554d03350e5c8d~2](https://github.com/user-attachments/assets/672f6eb8-abe2-407b-9713-156343ce8978)
   ![Uploading Screenshot_2025-03-30-23-23-03-26_4f5da45ba9f8f23938554d03350e5c8d~3.jpg…]()|
 
 ## 📊 Code Standards

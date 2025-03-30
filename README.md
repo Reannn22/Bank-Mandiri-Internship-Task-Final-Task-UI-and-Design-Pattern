@@ -1,4 +1,4 @@
-# News Room Application
+![Screenshot_2025-03-30-23-23-03-26_4f5da45ba9f8f23938554d03350e5c8d~3](https://github.com/user-attachments/assets/36a2c95d-1f6f-4096-91b3-be7f4bb01221)# News Room Application
 
 ## Overview
 News Room is a mobile application developed using Flutter that provides users with the latest news from various sources. This project was developed as part of the Mandiri Virtual Internship Program, implementing clean architecture principles and modern design patterns.
@@ -14,7 +14,9 @@ News Room is a mobile application developed using Flutter that provides users wi
 ## Architecture
 The application follows Clean Architecture principles with MVVM (Model-View-ViewModel) pattern:
 ```
-lib/
+lib/![Uploading Screenshot_2025-03-30-23-23-03-26_4f5da45ba9f8f23938554d03350e5c![Uploading Screenshot_2025-03-30-23-23-12-59_4f5da45ba9f8f23938554d03350e5c8d~2.jpg…]()
+8d~3.jpg…]()
+
 ├── data/
 │   ├── models/
 │   ├── repositories/

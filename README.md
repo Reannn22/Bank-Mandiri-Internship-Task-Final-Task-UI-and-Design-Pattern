@@ -108,7 +108,3 @@ This project is licensed under the **MIT License** – see the [LICENSE](https:/
 **Reyhan Capri Moraga** – [@reannn22](https://github.com/Reannn22)
 
 📌 **Project Link**: [GitHub Repository](https://github.com/Reannn22/Bank-Mandiri-Internship-Task-Final-Task-UI-and-Design-Pattern)
-
----
-### 👀 View Counter
-![View Counter](https://komarev.com/ghpvc/?username=Reannn22&label=Views&color=blue&style=plastic)
